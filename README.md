@@ -6,6 +6,8 @@ This is a living collection. Some tools are mine, most are things I've found and
 
 ## Skills
 
+**What's a skill?** A markdown file that teaches an AI coding agent how to do a specific task. Drop it into your project, and the agent follows the instructions. No code to install — just a file.
+
 Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, etc.). Copy the file, point your agent at it, done.
 
 ### Writing & Content
@@ -25,7 +27,9 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 ## MCP Servers
 
-Model Context Protocol servers that give AI agents access to real tools and data.
+**What's MCP?** Model Context Protocol — a standard way to connect AI agents to external tools and data (calendars, databases, APIs). Think of it as a USB-C port for AI.
+
+MCP servers give AI agents access to real tools and data.
 
 ### Content & Publishing
 
