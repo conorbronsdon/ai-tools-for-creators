@@ -16,7 +16,12 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 ### Productivity & Workflow
 
-*Coming soon — have suggestions? Open an issue.*
+| Skill | What it does | Author |
+|-------|-------------|--------|
+| [session-management](https://github.com/conorbronsdon/claude-code-skills/tree/master/session-management) | Four commands (/start, /end, /update, /today) that give Claude Code memory across sessions. State files, session logs, daily heartbeats. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [reconcile](https://github.com/conorbronsdon/claude-code-skills/tree/master/reconcile) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [recover](https://github.com/conorbronsdon/claude-code-skills/tree/master/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [skill-creator](https://github.com/conorbronsdon/claude-code-skills/tree/master/skill-creator) | Generate new skills from plain-language descriptions. Scaffolds SKILL.md, command file, and CLAUDE.md additions. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## MCP Servers
 
