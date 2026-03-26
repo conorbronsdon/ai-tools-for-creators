@@ -72,4 +72,6 @@ Quality bar: you've actually used it, not just bookmarked it.
 
 Maintained by [Conor Bronsdon](https://github.com/conorbronsdon). I host the [Chain of Thought](https://chainofthought.show) podcast covering AI infrastructure, developer tools, and how practitioners actually use this stuff. Many of these tools were built or discovered through conversations with guests on the show.
 
+New to AI tools? Check out [AI Learning Resources](https://github.com/conorbronsdon/ai-learning-resources) — a curated path from "what is AI?" to building your own workflows.
+
 If you want to go deeper on any of these topics, the podcast is a good place to start.
