@@ -37,6 +37,7 @@ MCP servers give AI agents access to real tools and data.
 |--------|-------------|--------|
 | [Transistor-MCP](https://github.com/conorbronsdon/Transistor-MCP) | Full Transistor.fm API access — episodes, analytics, transcripts, show management. | [@conorbronsdon](https://github.com/conorbronsdon) (fork of [@gxjansen](https://github.com/gxjansen/Transistor-MCP)) |
 | [substack-mcp](https://github.com/conorbronsdon/substack-mcp) | Read posts, manage drafts on Substack. No publish or delete by design — safe for agent workflows. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [podcastindex-mcp](https://github.com/conorbronsdon/podcastindex-mcp) | Podcast Index API — search by person/topic, trending podcasts, feed health checks, cross-platform episode discovery. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workspace
 
