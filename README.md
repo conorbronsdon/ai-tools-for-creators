@@ -1,6 +1,20 @@
+<div align="center">
+
 # AI Tools for Creators
 
-A curated collection of AI skills, MCP servers, and workflow tools for people who create content, build strategy, and ship ideas. Tested in real production workflows — not theoretical.
+A curated collection of AI skills, MCP servers, and workflow tools for content creators.
+
+[![GitHub stars](https://img.shields.io/github/stars/conorbronsdon/ai-tools-for-creators?style=flat-square)](https://github.com/conorbronsdon/ai-tools-for-creators/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conor_Bronsdon-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/conorbronsdon/)
+[![Podcast](https://img.shields.io/badge/Podcast-Chain_of_Thought-purple?style=flat-square)](https://chainofthought.show)
+[![X](https://img.shields.io/badge/X-@ConorBronsworthy-black?style=flat-square&logo=x)](https://x.com/ConorBronsworthy)
+
+</div>
+
+---
+
 
 This is a living collection. Some tools are mine, most are things I've found and vouch for. If something's here, I've used it or someone I trust has.
 
