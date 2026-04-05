@@ -4,7 +4,7 @@
 
 A curated collection of AI skills, MCP servers, and workflow tools for content creators.
 
-[![GitHub stars](https://img.shields.io/github/stars/conorbronsdon/ai-tools-for-creators?style=social)](https://github.com/conorbronsdon/ai-tools-for-creators/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/conorbronsdon/ai-tools-for-creators?style=social&cacheSeconds=3600)](https://github.com/conorbronsdon/ai-tools-for-creators/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Podcast](https://img.shields.io/badge/Podcast-Chain_of_Thought-purple?style=flat-square)](https://chainofthought.show)
 [![X](https://img.shields.io/badge/X-@ConorBronsdon-black?style=flat-square&logo=x)](https://x.com/ConorBronsdon)
