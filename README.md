@@ -37,6 +37,12 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | [recover](https://github.com/conorbronsdon/claude-code-skills/tree/master/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [skill-creator](https://github.com/conorbronsdon/claude-code-skills/tree/master/skill-creator) | Generate new skills from plain-language descriptions. Scaffolds SKILL.md, command file, and CLAUDE.md additions. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
+### Development & Code Review
+
+| Skill | What it does | Author |
+|-------|-------------|--------|
+| [code-review](https://github.com/conorbronsdon/claude-code-skills/tree/master/code-review) | Multi-agent PR review — orchestrates Copilot + parallel subagents (adversarial, operational, reference-comparison) sized to PR risk. Catches architectural P0s that single-pass review misses. | [@conorbronsdon](https://github.com/conorbronsdon) |
+
 ## MCP Servers
 
 **What's MCP?** Model Context Protocol — a standard way to connect AI agents to external tools and data (calendars, databases, APIs). Think of it as a USB-C port for AI.
