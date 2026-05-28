@@ -26,7 +26,7 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Comprehensive checklist for catching and fixing AI writing patterns. 90+ patterns across vocabulary, structure, rhythm, and more. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Audit & rewrite content to remove AI writing patterns — 42 pattern categories plus a 109-word replacement table, with a detect-only mode. Installs as a Claude Code / Cowork plugin or a standalone skill. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workflow
 
