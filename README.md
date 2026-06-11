@@ -36,12 +36,21 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | [reconcile](https://github.com/conorbronsdon/claude-code-skills/tree/master/reconcile) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [recover](https://github.com/conorbronsdon/claude-code-skills/tree/master/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [skill-creator](https://github.com/conorbronsdon/claude-code-skills/tree/master/skill-creator) | Generate new skills from plain-language descriptions. Scaffolds SKILL.md, command file, and CLAUDE.md additions. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [ssot-check](https://github.com/conorbronsdon/claude-code-skills/tree/master/ssot-check) | Single-source-of-truth drift auditor. Finds facts hand-copied across docs (episode counts, prices, stats), builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Development & Code Review
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
 | [code-review](https://github.com/conorbronsdon/claude-code-skills/tree/master/code-review) | Multi-agent PR review — orchestrates Copilot + parallel subagents (adversarial, operational, reference-comparison) sized to PR risk. Catches architectural P0s that single-pass review misses. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [eval-integrity](https://github.com/conorbronsdon/claude-code-skills/tree/master/eval-integrity) | Audit an LLM benchmark repo for credibility practices — pre-registration, contamination guards, holdout hygiene, judge validity, statistical honesty. Answers: would your published numbers survive an adversarial reviewer? | [@conorbronsdon](https://github.com/conorbronsdon) |
+
+### Research & Booking
+
+| Skill | What it does | Author |
+|-------|-------------|--------|
+| [angel-diligence](https://github.com/conorbronsdon/claude-code-skills/tree/master/angel-diligence) | Pre-investment research and deal-memo generation. Parallel web research with strict citation rules; separates verified facts from claims; ends in a verdict scaffold, never an invest/pass call. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [guest-circuit](https://github.com/conorbronsdon/claude-code-skills/tree/master/guest-circuit) | Map a prospective podcast guest's appearance circuit — where they've been, their stump speech, and the unclaimed angle for your show. Uses Podcast Index when configured, web search otherwise. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## MCP Servers
 
@@ -56,6 +65,7 @@ MCP servers give AI agents access to real tools and data.
 | [Transistor-MCP](https://github.com/conorbronsdon/Transistor-MCP) | Full Transistor.fm API access — episodes, analytics, transcripts, show management. | [@conorbronsdon](https://github.com/conorbronsdon) (fork of [@gxjansen](https://github.com/gxjansen/Transistor-MCP)) |
 | [substack-mcp](https://github.com/conorbronsdon/substack-mcp) | Read posts, manage drafts on Substack. No publish or delete by design — safe for agent workflows. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [podcastindex-mcp](https://github.com/conorbronsdon/podcastindex-mcp) | Podcast Index API — search by person/topic, trending podcasts, feed health checks, cross-platform episode discovery. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [op3-mcp](https://github.com/conorbronsdon/op3-mcp) | OP3 (Open Podcast Prefix Project) analytics — downloads over time, listener geography, app share, per-episode breakdowns. Read-only by design. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workspace
 
