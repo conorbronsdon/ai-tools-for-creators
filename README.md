@@ -32,25 +32,25 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [session-management](https://github.com/conorbronsdon/claude-code-skills/tree/master/session-management) | Four commands (/start, /end, /update, /today) that give Claude Code memory across sessions. State files, session logs, daily heartbeats. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [reconcile](https://github.com/conorbronsdon/claude-code-skills/tree/master/reconcile) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [recover](https://github.com/conorbronsdon/claude-code-skills/tree/master/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [skill-creator](https://github.com/conorbronsdon/claude-code-skills/tree/master/skill-creator) | Generate new skills from plain-language descriptions. Scaffolds SKILL.md, command file, and CLAUDE.md additions. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [ssot-check](https://github.com/conorbronsdon/claude-code-skills/tree/master/ssot-check) | Single-source-of-truth drift auditor. Finds facts hand-copied across docs (episode counts, prices, stats), builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [session-management](https://github.com/conorbronsdon/claude-code-skills/tree/main/session-management) | Four commands (/start, /end, /update, /today) that give Claude Code memory across sessions. State files, session logs, daily heartbeats. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [reconcile](https://github.com/conorbronsdon/claude-code-skills/tree/main/reconcile) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [recover](https://github.com/conorbronsdon/claude-code-skills/tree/main/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [skill-creator](https://github.com/conorbronsdon/claude-code-skills/tree/main/skill-creator) | Generate new skills from plain-language descriptions. Scaffolds SKILL.md, command file, and CLAUDE.md additions. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [ssot-check](https://github.com/conorbronsdon/claude-code-skills/tree/main/ssot-check) | Single-source-of-truth drift auditor. Finds facts hand-copied across docs (episode counts, prices, stats), builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Development & Code Review
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [code-review](https://github.com/conorbronsdon/claude-code-skills/tree/master/code-review) | Multi-agent PR review — orchestrates Copilot + parallel subagents (adversarial, operational, reference-comparison) sized to PR risk. Catches architectural P0s that single-pass review misses. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [eval-integrity](https://github.com/conorbronsdon/claude-code-skills/tree/master/eval-integrity) | Audit an LLM benchmark repo for credibility practices — pre-registration, contamination guards, holdout hygiene, judge validity, statistical honesty. Answers: would your published numbers survive an adversarial reviewer? | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [code-review](https://github.com/conorbronsdon/claude-code-skills/tree/main/code-review) | Multi-agent PR review — orchestrates Copilot + parallel subagents (adversarial, operational, reference-comparison) sized to PR risk. Catches architectural P0s that single-pass review misses. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [eval-integrity](https://github.com/conorbronsdon/claude-code-skills/tree/main/eval-integrity) | Audit an LLM benchmark repo for credibility practices — pre-registration, contamination guards, holdout hygiene, judge validity, statistical honesty. Answers: would your published numbers survive an adversarial reviewer? | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Research & Booking
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [angel-diligence](https://github.com/conorbronsdon/claude-code-skills/tree/master/angel-diligence) | Pre-investment research and deal-memo generation. Parallel web research with strict citation rules; separates verified facts from claims; ends in a verdict scaffold, never an invest/pass call. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [guest-circuit](https://github.com/conorbronsdon/claude-code-skills/tree/master/guest-circuit) | Map a prospective podcast guest's appearance circuit — where they've been, their stump speech, and the unclaimed angle for your show. Uses Podcast Index when configured, web search otherwise. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [angel-diligence](https://github.com/conorbronsdon/claude-code-skills/tree/main/angel-diligence) | Pre-investment research and deal-memo generation. Parallel web research with strict citation rules; separates verified facts from claims; ends in a verdict scaffold, never an invest/pass call. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [guest-circuit](https://github.com/conorbronsdon/claude-code-skills/tree/main/guest-circuit) | Map a prospective podcast guest's appearance circuit — where they've been, their stump speech, and the unclaimed angle for your show. Uses Podcast Index when configured, web search otherwise. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## MCP Servers
 
