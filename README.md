@@ -61,7 +61,23 @@ MCP servers give AI agents access to real tools and data.
 
 | Server | What it does | Author |
 |--------|-------------|--------|
-| [gws-mcp-server](https://github.com/conorbronsdon/gws-mcp-server) | Google Workspace access — 24 tools across Drive, Sheets, Calendar, Docs, and Gmail. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [gws-mcp-server](https://github.com/conorbronsdon/gws-mcp-server) | Google Workspace access — 41 tools across Gmail, Calendar, Drive, Sheets, Docs, and Tasks. Built on the official `gws` CLI. | [@conorbronsdon](https://github.com/conorbronsdon) |
+
+## Benchmarks & Evaluation
+
+If you're building with agents, you eventually need to measure them. Tools for that:
+
+| Project | What it does | Author |
+|---------|-------------|--------|
+| [cot-bench](https://github.com/conorbronsdon/cot-bench) | Open agent evaluation leaderboard. Three judges score every scenario (two open-weight, one frontier reference) across CLEAR-aligned metrics: efficacy, cost, reliability, latency. Rubrics are code, and every raw judge score is published so you can audit the results. | [@conorbronsdon](https://github.com/conorbronsdon) |
+
+## Web Apps
+
+Standalone tools that run in the browser. No agent, no install.
+
+| App | What it does | Author |
+|-----|-------------|--------|
+| [track-finder](https://github.com/conorbronsdon/track-finder) | Paste a tracklist or a YouTube playlist URL and get search links for every track on SoundCloud, Spotify, YouTube, Apple Music, or Beatport. Progress saves in your browser. Built for DJs and playlist builders. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## How to Use These
 
