@@ -26,7 +26,7 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Audit & rewrite content to remove AI writing patterns — 46 pattern categories + a 109-word replacement table. Rewrite / detect / edit-in-place modes, optional voice profiles (casual/professional/technical/warm/blunt), and a zero-dependency detector engine. Installs as a Claude Code / Cowork plugin or a standalone skill. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Audit & rewrite content to remove AI writing patterns — 49 pattern categories + a 109-word replacement table. Rewrite / detect / edit-in-place modes, optional voice profiles (casual/professional/technical/warm/blunt), and a zero-dependency detector engine. Installs as a Claude Code / Cowork plugin or a standalone skill. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workflow
 
@@ -37,6 +37,7 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | [recover](https://github.com/conorbronsdon/claude-code-skills/tree/main/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [skill-creator](https://github.com/conorbronsdon/claude-code-skills/tree/main/skill-creator) | Generate new skills from plain-language descriptions. Scaffolds SKILL.md, command file, and CLAUDE.md additions. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [ssot-check](https://github.com/conorbronsdon/claude-code-skills/tree/main/ssot-check) | Single-source-of-truth drift auditor. Finds facts hand-copied across docs (episode counts, prices, stats), builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [agent-memory-kit](https://github.com/conorbronsdon/agent-memory-kit) | The curation loop for agent memory — capture, recall, and a read-only curator that finds rot and contradictions before your agent is confidently wrong. Plain markdown and JSON, five slash commands, human-reviewed diffs. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Development & Code Review
 
@@ -80,6 +81,7 @@ If you're building with agents, you eventually need to measure them. Tools for t
 | Project | What it does | Author |
 |---------|-------------|--------|
 | [cot-bench](https://github.com/conorbronsdon/cot-bench) | Open agent evaluation leaderboard. Three judges score every scenario (two open-weight, one frontier reference) across CLEAR-aligned metrics: efficacy, cost, reliability, latency. Rubrics are code, and every raw judge score is published so you can audit the results. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [podcast-benchmark](https://github.com/conorbronsdon/podcast-benchmark) | Benchmark any podcast against its peers using only public data — catalog depth, cadence, transcript availability, feed hygiene. No download estimates, every number sourced and timestamped. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## Web Apps
 
