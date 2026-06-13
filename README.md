@@ -89,6 +89,7 @@ Standalone tools that run in the browser. No agent, no install.
 
 | App | What it does | Author |
 |-----|-------------|--------|
+| [CreatorSkills](https://creatorskills.co) | Marketplace of 30+ downloadable AI skills for content creators covering YouTube scripting, sponsorship analysis, and audience growth. Works with Claude and ChatGPT. | [@creatorskillsco](https://creatorskills.co) |
 | [track-finder](https://github.com/conorbronsdon/track-finder) | Paste a tracklist or a YouTube playlist URL and get search links for every track on SoundCloud, Spotify, YouTube, Apple Music, or Beatport. Progress saves in your browser. Built for DJs and playlist builders. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## How to Use These
