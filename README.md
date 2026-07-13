@@ -73,7 +73,7 @@ MCP servers give AI agents access to real tools and data.
 
 | Server | What it does | Author |
 |--------|-------------|--------|
-| [gws-mcp-server](https://github.com/conorbronsdon/gws-mcp-server) | Google Workspace access — 41 tools across Gmail, Calendar, Drive, Sheets, Docs, and Tasks. Built on the official `gws` CLI. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [gws-mcp-server](https://github.com/conorbronsdon/gws-mcp-server) | Google Workspace access — 39 curated tools across Gmail, Calendar, Drive, Sheets, Docs, and Tasks. Built on the official `gws` CLI. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## Benchmarks & Evaluation
 
