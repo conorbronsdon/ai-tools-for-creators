@@ -33,11 +33,11 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [session-management](https://github.com/conorbronsdon/claude-code-skills/tree/main/session-management) | Four commands (/start, /end, /update, /today) that give Claude Code memory across sessions. State files, session logs, daily heartbeats. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [reconcile](https://github.com/conorbronsdon/claude-code-skills/tree/main/reconcile) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [recover](https://github.com/conorbronsdon/claude-code-skills/tree/main/recover) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [agent-workspace](https://github.com/conorbronsdon/agent-workspace) | Memory and hygiene for agent workspaces — six lifecycle skills (/start, /end, /update, /today, /reconcile, /recover) with a configurable state layout. State files, session logs, daily heartbeats, drift and worktree cleanup. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [reconcile](https://github.com/conorbronsdon/agent-workspace) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. Part of agent-workspace. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [recover](https://github.com/conorbronsdon/agent-workspace) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. Part of agent-workspace. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [agent-skill-builder](https://github.com/conorbronsdon/agent-skill-builder) | Build agent skills that don't rot. Generates skills from plain-language descriptions with the design decisions most generators skip (invocation control, arguments, context budget), validates them with a bundled checker, and pins its spec knowledge to a CI-watched snapshot. New/review/migrate modes. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [ssot-check](https://github.com/conorbronsdon/claude-code-skills/tree/main/ssot-check) | Single-source-of-truth drift auditor. Finds facts hand-copied across docs (episode counts, prices, stats), builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [ssot-check](https://github.com/conorbronsdon/ssot-check) | Single-source-of-truth drift auditor, now tool-backed: deterministic stdlib CLI (45 tests) + skill wrapper + pre-commit hook + GitHub Action. Finds facts hand-copied across docs, builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [agent-memory-kit](https://github.com/conorbronsdon/agent-memory-kit) | The curation loop for agent memory — capture, recall, and a read-only curator that finds rot and contradictions before your agent is confidently wrong. Plain markdown and JSON, five slash commands, human-reviewed diffs. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Development & Code Review
@@ -45,7 +45,7 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | Skill | What it does | Author |
 |-------|-------------|--------|
 | [code-review](https://github.com/conorbronsdon/claude-code-skills/tree/main/code-review) | Multi-agent PR review — orchestrates Copilot + parallel subagents (adversarial, operational, reference-comparison) sized to PR risk. Catches architectural P0s that single-pass review misses. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [eval-integrity](https://github.com/conorbronsdon/claude-code-skills/tree/main/eval-integrity) | Audit an LLM benchmark repo for credibility practices — pre-registration, contamination guards, holdout hygiene, judge validity, statistical honesty. Answers: would your published numbers survive an adversarial reviewer? | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [eval-integrity](https://github.com/conorbronsdon/eval-integrity) | Audit an LLM benchmark repo for credibility practices — 36 scoreable sub-checks across seven dimensions, a JSON result schema for CI, and three audit fixtures. Answers: would your published numbers survive an adversarial reviewer? | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Research & Booking
 
