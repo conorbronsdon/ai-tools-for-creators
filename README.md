@@ -26,7 +26,7 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 
 | Skill | What it does | Author |
 |-------|-------------|--------|
-| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Audit & rewrite content to remove AI writing patterns — 49 pattern categories + a 109-word replacement table. Rewrite / detect / edit-in-place modes, optional voice profiles (casual/professional/technical/warm/blunt), and a zero-dependency detector engine. Installs as a Claude Code / Cowork plugin or a standalone skill. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Audit & rewrite content to remove AI writing patterns — 53 pattern categories + a 109-entry replacement table. Rewrite / detect / edit-in-place modes, optional voice profiles (casual/professional/technical/warm/blunt), and a zero-dependency detector engine. Installs as a Claude Code / Cowork plugin or a standalone skill. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [demo-gif-skill](https://github.com/conorbronsdon/demo-gif-skill) | Add a reproducible demo GIF to any repo's README in one prompt. Picks the method (vhs for terminals, Playwright for web apps), writes a committed recording script so the GIF regenerates instead of going stale, optimizes under 8 MB, and embeds it with real alt text. Works in Claude Code and any agentskills.io agent. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workflow
