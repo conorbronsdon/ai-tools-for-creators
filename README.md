@@ -83,6 +83,7 @@ Publishing and scheduling across social platforms. Read the gating notes below b
 |--------|-------------|--------|
 | [X MCP](https://docs.x.com/tools/mcp) | Official hosted MCP at `api.x.com/mcp`. Full-archive search, post and engagement lookup, user timelines, bookmarks, trends, and X Articles drafting. OAuth 2.0 via the `xurl` bridge for user-context writes, or an app-only bearer token for read-only. | [@XDevelopers](https://github.com/xdevplatform) |
 | [Postiz](https://github.com/gitroomhq/postiz-app) | Self-hosted scheduler covering 32 networks including TikTok, Instagram, Threads, Bluesky, and Mastodon. A documented public API (`POST /posts`, `POST /upload`, `GET /integrations`) plus a Node SDK make it scriptable. **You still supply your own developer credentials per platform** — the compose file takes `TIKTOK_CLIENT_ID`, `THREADS_APP_ID`, `LINKEDIN_CLIENT_ID` and the rest, so it removes the integration work but not the app-review work. Runs on 2GB RAM / 2 vCPU. No MCP server. AGPL-3.0. | [@gitroomhq](https://github.com/gitroomhq) |
+| [atproto-mcp](https://github.com/cameronrye/atproto-mcp) | Bluesky and the wider AT Protocol — 51 tools covering posts, threads, feeds, search, lists, DMs, and moderation. Runs read-only with zero config (`npx atproto-mcp`), or add an app password for writes. Every tool declares MCP annotations and destructive operations are flagged, which is rarer than it should be. Built on the official `@atproto/api` and MCP SDK, with rate limiting. MIT. | [@cameronrye](https://github.com/cameronrye) |
 | [meta-mcp](https://github.com/mikusnuz/meta-mcp) | Instagram Graph API and Threads API in one server — 57 tools on Graph API v25.0. Publishes photos, videos, reels, stories, and carousels to Instagram; text, polls, GIFs, and carousels to Threads. Includes insights, comment management, and a cross-posting prompt. | [@mikusnuz](https://github.com/mikusnuz) |
 
 **What actually gates you.** Posting is the last mile and the easy part. The work is upstream, and no scheduler removes it — self-hosted tools take your credentials, they don't lend you theirs:
@@ -93,10 +94,9 @@ Publishing and scheduling across social platforms. Read the gating notes below b
 - **LinkedIn** — the most restrictive of the major platforms. Publishing runs through the Community Management API, which needs a registered company, a verified Page, and a two-tier app review. There is no quick path for individual developers.
 - **Bluesky** — the exception. App passwords, no review, no paid tier, open protocol. If you want one platform automated this week, it's this one.
 
-**Known gaps.** Two things that should exist and don't:
+**Known gap:** there's no MCP server for Postiz. The public API is well-shaped and does the hard part already, so a wrapper would put 32 platforms behind one agent-facing interface.
 
-- **No MCP server for Postiz.** The public API is well-shaped and does the hard part already. An MCP wrapper would put 32 platforms behind one agent-facing interface.
-- **No canonical Bluesky MCP.** A dozen-plus implementations exist, the largest at 48 stars and most unmaintained since 2025. Odd, given Bluesky is the easiest platform to build against.
+**On finding the Bluesky one.** Searching GitHub for a Bluesky MCP returns a dozen-plus results, and sorting by stars is actively misleading here — the most-starred was last touched in April 2025. `atproto-mcp` sits at single-digit stars and is the only one that's actually maintained, published to npm, and annotated properly. Worth remembering when a category looks abandoned: it may just be badly sorted.
 
 ## Benchmarks & Evaluation
 
