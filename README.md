@@ -82,7 +82,7 @@ Publishing and scheduling across social platforms. Read the gating notes below b
 | Server | What it does | Author |
 |--------|-------------|--------|
 | [X MCP](https://docs.x.com/tools/mcp) | Official hosted MCP at `api.x.com/mcp`. Full-archive search, post and engagement lookup, user timelines, bookmarks, trends, and X Articles drafting. OAuth 2.0 via the `xurl` bridge for user-context writes, or an app-only bearer token for read-only. | [@XDevelopers](https://github.com/xdevplatform) |
-| [Postiz](https://github.com/gitroomhq/postiz-app) | Self-hosted scheduler covering 30+ networks including TikTok, Instagram, Threads, Bluesky, and Mastodon. Ships its own MCP server and a public API, so it absorbs the per-platform OAuth and app-review work you'd otherwise repeat for every network. AGPL-3.0. | [@gitroomhq](https://github.com/gitroomhq) |
+| [Postiz](https://github.com/gitroomhq/postiz-app) | Self-hosted scheduler covering 32 networks including TikTok, Instagram, Threads, Bluesky, and Mastodon. A documented public API (`POST /posts`, `POST /upload`, `GET /integrations`) and a Node SDK make it scriptable, and it absorbs the per-platform OAuth work you'd otherwise repeat for every network. No MCP server — see the gap note below. Self-hosting needs Postgres, Redis, and Temporal, so plan on a VPS. AGPL-3.0. | [@gitroomhq](https://github.com/gitroomhq) |
 | [meta-mcp](https://github.com/mikusnuz/meta-mcp) | Instagram Graph API and Threads API in one server — 57 tools on Graph API v25.0. Publishes photos, videos, reels, stories, and carousels to Instagram; text, polls, GIFs, and carousels to Threads. Includes insights, comment management, and a cross-posting prompt. | [@mikusnuz](https://github.com/mikusnuz) |
 
 **What actually gates you.** Posting is the last mile and the easy part. The work is upstream:
@@ -93,7 +93,10 @@ Publishing and scheduling across social platforms. Read the gating notes below b
 - **LinkedIn** — the most restrictive of the major platforms. Publishing runs through the Community Management API, which needs a registered company, a verified Page, and a two-tier app review. There is no quick path for individual developers.
 - **Bluesky** — the exception. App passwords, no review, no paid tier, open protocol. If you want one platform automated this week, it's this one.
 
-**Known gap:** there's no canonical Bluesky MCP server. The ones that exist are a long tail of small projects, most unmaintained since 2025. Nothing here yet meets the bar.
+**Known gaps.** Two things that should exist and don't:
+
+- **No MCP server for Postiz.** The public API is well-shaped and does the hard part already. An MCP wrapper would put 32 platforms behind one agent-facing interface.
+- **No canonical Bluesky MCP.** A dozen-plus implementations exist, the largest at 48 stars and most unmaintained since 2025. Odd, given Bluesky is the easiest platform to build against.
 
 ## Benchmarks & Evaluation
 
