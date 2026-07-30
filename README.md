@@ -75,6 +75,26 @@ MCP servers give AI agents access to real tools and data.
 |--------|-------------|--------|
 | [gws-mcp-server](https://github.com/conorbronsdon/gws-mcp-server) | Google Workspace access — 39 curated tools across Gmail, Calendar, Drive, Sheets, Docs, and Tasks. Built on the official `gws` CLI. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
+### Social & Distribution
+
+Publishing and scheduling across social platforms. Read the gating notes below before you plan a workflow around any of these — the API is rarely the hard part.
+
+| Server | What it does | Author |
+|--------|-------------|--------|
+| [X MCP](https://docs.x.com/tools/mcp) | Official hosted MCP at `api.x.com/mcp`. Full-archive search, post and engagement lookup, user timelines, bookmarks, trends, and X Articles drafting. OAuth 2.0 via the `xurl` bridge for user-context writes, or an app-only bearer token for read-only. | [@XDevelopers](https://github.com/xdevplatform) |
+| [Postiz](https://github.com/gitroomhq/postiz-app) | Self-hosted scheduler covering 30+ networks including TikTok, Instagram, Threads, Bluesky, and Mastodon. Ships its own MCP server and a public API, so it absorbs the per-platform OAuth and app-review work you'd otherwise repeat for every network. AGPL-3.0. | [@gitroomhq](https://github.com/gitroomhq) |
+| [meta-mcp](https://github.com/mikusnuz/meta-mcp) | Instagram Graph API and Threads API in one server — 57 tools on Graph API v25.0. Publishes photos, videos, reels, stories, and carousels to Instagram; text, polls, GIFs, and carousels to Threads. Includes insights, comment management, and a cross-posting prompt. | [@mikusnuz](https://github.com/mikusnuz) |
+
+**What actually gates you.** Posting is the last mile and the easy part. The work is upstream:
+
+- **TikTok** — personal accounts cannot use the Content Posting API. You need a business or developer entity, plus app review with a privacy policy and a demo video of your OAuth and upload flow. Budget 5–10 business days for approval.
+- **Instagram** — Graph API publishing needs a Business or Creator account and a linked Facebook Page. Verify which account type your workflow requires before you commit; the answer has moved more than once.
+- **Threads** — free API, and since September 2025 it no longer requires a linked Instagram account. Production access still waits on Meta App Review.
+- **LinkedIn** — the most restrictive of the major platforms. Publishing runs through the Community Management API, which needs a registered company, a verified Page, and a two-tier app review. There is no quick path for individual developers.
+- **Bluesky** — the exception. App passwords, no review, no paid tier, open protocol. If you want one platform automated this week, it's this one.
+
+**Known gap:** there's no canonical Bluesky MCP server. The ones that exist are a long tail of small projects, most unmaintained since 2025. Nothing here yet meets the bar.
+
 ## Benchmarks & Evaluation
 
 If you're building with agents, you eventually need to measure them. Tools for that:
