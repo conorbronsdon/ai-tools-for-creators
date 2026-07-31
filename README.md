@@ -6,7 +6,7 @@ A curated collection of AI skills, MCP servers, and workflow tools for content c
 
 [![GitHub stars](https://img.shields.io/github/stars/conorbronsdon/ai-tools-for-creators?style=social&cacheSeconds=3600)](https://github.com/conorbronsdon/ai-tools-for-creators/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Podcast](https://img.shields.io/badge/Podcast-Chain_of_Thought-purple?style=flat-square)](https://chainofthought.show)
+[![Podcast](https://img.shields.io/badge/Podcast-Chain_of_Thought-purple?style=flat-square)](https://chainofthought.show/?utm_source=github&utm_medium=referral&utm_campaign=repo-readme&utm_content=ai-tools-for-creators)
 [![X](https://img.shields.io/badge/X-@ConorBronsdon-black?style=flat-square&logo=x)](https://x.com/ConorBronsdon)
 
 </div>
@@ -150,7 +150,7 @@ Quality bar: you've actually used it, not just bookmarked it.
 
 ## About
 
-Maintained by [Conor Bronsdon](https://github.com/conorbronsdon). I host the [Chain of Thought](https://chainofthought.show) podcast covering AI infrastructure, developer tools, and how practitioners actually use this stuff. Many of these tools were built or discovered through conversations with guests on the show.
+Maintained by [Conor Bronsdon](https://github.com/conorbronsdon). I host the [Chain of Thought](https://chainofthought.show/?utm_source=github&utm_medium=referral&utm_campaign=repo-readme&utm_content=ai-tools-for-creators) podcast covering AI infrastructure, developer tools, and how practitioners actually use this stuff. Many of these tools were built or discovered through conversations with guests on the show.
 
 New to AI tools? Check out [AI Learning Resources](https://github.com/conorbronsdon/ai-learning-resources) — a curated path from "what is AI?" to building your own workflows.
 
