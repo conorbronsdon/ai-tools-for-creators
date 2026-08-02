@@ -101,7 +101,7 @@ Publishing and scheduling across social platforms. Read the gating notes below b
 - **LinkedIn** — the most restrictive of the major platforms. Publishing runs through the Community Management API, which needs a registered company, a verified Page, and a two-tier app review. There is no quick path for individual developers.
 - **Bluesky** — the exception. App passwords, no review, no paid tier, open protocol. If you want one platform automated this week, it's this one.
 
-**Known gap:** there's no MCP server for Postiz. The public API is well-shaped and does the hard part already, so a wrapper would put 32 platforms behind one agent-facing interface.
+**Known gap, narrowed.** Postiz ships no *first-party* MCP server — as of 2026-07-30 its repo carried one internal `start.mcp.ts` and `docs.postiz.com/public-api` documented no MCP surface. Third-party wrappers do exist, which the earlier flat "no MCP server for Postiz" here got wrong. The most developed is [`postiz-mcp`](https://github.com/solomonneas/postiz-mcp) — on npm, MIT, 22 tools, writes gated behind `POSTIZ_ENABLE_WRITE` and deletes behind a second flag plus `confirm: true`. It stays out of the table above because nobody here has run it against a live instance, and the bar for this list is having used a thing. Treat it as a lead, not a recommendation.
 
 **On finding the Bluesky one.** Searching GitHub for a Bluesky MCP returns a dozen-plus results, and sorting by stars is actively misleading here — the most-starred was last touched in April 2025. `atproto-mcp` sits at single-digit stars and is the only one that's actually maintained, published to npm, and annotated properly. Worth remembering when a category looks abandoned: it may just be badly sorted.
 
