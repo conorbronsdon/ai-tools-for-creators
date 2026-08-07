@@ -78,6 +78,7 @@ MCP servers give AI agents access to real tools and data.
 | [op3-mcp](https://github.com/conorbronsdon/op3-mcp) | OP3 (Open Podcast Prefix Project) analytics — downloads over time, listener geography, app share, per-episode breakdowns. Read-only by design. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [postlint-mcp](https://github.com/conorbronsdon/postlint-mcp) | Check a draft against a platform's real character limits before you post — X bills every URL at 23 via t.co and weights non-Latin 2x, Bluesky counts 300 graphemes, Mastodon counts grapheme clusters. Every limit carries a primary source. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [gsc-mcp](https://github.com/conorbronsdon/gsc-mcp) | Google Search Console — search analytics, sitemap submission, URL inspection. Read tools work on a read-only scope; writes ask for the full one. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [yt-analytics-mcp](https://github.com/conorbronsdon/yt-analytics-mcp) | Owner-side YouTube Analytics — watch time, traffic sources, audience retention, geography, and playlist metrics, plus an episode-race tool that re-indexes videos to days-since-their-own-publish so a new episode compares against the last few at the same age. The owner-only half the Data API can't reach: no API key gets you retention or watch time. Nine tools, all reads, `channel==MINE` hardcoded. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workspace
 
