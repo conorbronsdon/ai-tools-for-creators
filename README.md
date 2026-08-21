@@ -126,6 +126,7 @@ Standalone tools that run in the browser. No agent, no install.
 | App | What it does | Author |
 |-----|-------------|--------|
 | [track-finder](https://github.com/conorbronsdon/track-finder) | Paste a tracklist or a YouTube playlist URL and get search links for every track on SoundCloud, Spotify, YouTube, Apple Music, or Beatport. Progress saves in your browser. Built for DJs and playlist builders. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [Recapo.ai](https://recapo.ai?from=conorbronsdon-ai-tools-for-creators) | AI-powered video editing platform that turns long-form video into publish-ready short clips: one-click editing, automatic scripts, subtitles, AI voiceover, chat-based natural-language editing, batch generation, and cloud rendering. Freemium. | [Recapo.ai](https://recapo.ai?from=conorbronsdon-ai-tools-for-creators) |
 
 ## How to Use These
 
