@@ -109,6 +109,18 @@ Publishing and scheduling across social platforms. Read the gating notes below b
 
 **On finding the Bluesky one.** Searching GitHub for a Bluesky MCP returns a dozen-plus results, and sorting by stars is actively misleading here — the most-starred was last touched in April 2025. `atproto-mcp` sits at single-digit stars and is the only one that's actually maintained, published to npm, and annotated properly. Worth remembering when a category looks abandoned: it may just be badly sorted.
 
+## Creative Production
+
+Tools used in real visual, video, and audio-production workflows. The useful pattern is a handoff: generate or assemble a first pass, then keep source fidelity and the final editorial decision under human review.
+
+| Tool | What it does | Author |
+|------|-------------|--------|
+| [Remotion](https://github.com/remotion-dev/remotion) | Create videos and motion graphics with React. Its official Agent Skills let Claude Code, Codex, and other coding agents scaffold compositions, add captions and animations, preview in Studio, and render locally or in batches — useful for repeatable explainers, animated clips, and branded video systems instead of one-off timeline edits. | [@remotion-dev](https://github.com/remotion-dev) |
+| [Claude Design](https://claude.com/product/claude-design) | Conversational canvas for designs, presentations, prototypes, and other visual communication. In the Chain of Thought thumbnail workflow it turns a structured, transcript-backed design packet into distinct visual directions while a human selects the concept and approves the final export. | [Anthropic](https://www.anthropic.com/) |
+| [Gemini image generation (Nano Banana)](https://gemini.google.com/) | Generate and edit images from prompts and references. Particularly useful for background plates and non-person illustration elements that can be composited with approved source photography; keep real people's faces, expressions, and poses out of the generative step. | [Google](https://ai.google.dev/gemini-api/docs/image-generation) |
+| [Figma AI](https://www.figma.com/ai/) | AI-assisted image editing inside a collaborative design canvas, including background removal, object isolation, expansion, erasing, and upscaling. Useful as the source-preserving cleanup and final-composition layer after an agent or image model produces the first pass. | [Figma](https://www.figma.com/) |
+| [WhisperX](https://github.com/m-bain/whisperX) | Speech recognition with word-level timestamps, alignment, and speaker diarization. A practical bridge from recorded audio or video to clip manifests, caption timing, quote finding, and transcript-backed editing workflows. | [@m-bain](https://github.com/m-bain) |
+
 ## Benchmarks & Evaluation
 
 If you're building with agents, you eventually need to measure them. Tools for that:
