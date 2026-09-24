@@ -71,7 +71,7 @@ MCP servers give AI agents access to real tools and data.
 
 | Server | What it does | Author |
 |--------|-------------|--------|
-| [Transistor-MCP](https://github.com/conorbronsdon/Transistor-MCP) | Full Transistor.fm API access — episodes, analytics, transcripts, show management. | [@conorbronsdon](https://github.com/conorbronsdon) (fork of [@gxjansen](https://github.com/gxjansen/Transistor-MCP)) |
+| [Transistor MCP](https://mcp.transistor.fm) | Transistor.fm's official MCP server: draft and publish episodes, bulk-edit past episodes, and see which topics get traction. | [Transistor.fm](https://transistor.fm) (official) |
 | [substack-mcp](https://github.com/conorbronsdon/substack-mcp) | Read posts, manage drafts on Substack. No publish or delete by design — safe for agent workflows. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [podcastindex-mcp](https://github.com/conorbronsdon/podcastindex-mcp) | Podcast Index API — search by person/topic, trending podcasts, feed health checks, cross-platform episode discovery. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [apple-podcasts-mcp](https://github.com/conorbronsdon/apple-podcasts-mcp) | Owner-side Apple Podcasts analytics over the Podcasts Connect Reporter protocol — plays, unique and engaged listeners, followers, per-episode listening. Not the public iTunes catalog. Read-only. | [@conorbronsdon](https://github.com/conorbronsdon) |
