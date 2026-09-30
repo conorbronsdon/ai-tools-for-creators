@@ -30,6 +30,8 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | [demo-gif-skill](https://github.com/conorbronsdon/demo-gif-skill) | Add a reproducible demo GIF to any repo's README in one prompt. Picks the method (vhs for terminals, Playwright for web apps), writes a committed recording script so the GIF regenerates instead of going stale, optimizes under 8 MB, and embeds it with real alt text. Works in Claude Code and any agentskills.io agent. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [grokkable-output](https://github.com/conorbronsdon/grokkable-output) | Make agent replies parseable in one pass — the first sentence answers the question, detail layers underneath so you can stop reading anywhere. Bans arrow-chain causality, fake structure, and numbers that don't trace to evidence. Ships real unedited before/after outputs. Works in Claude Code and any agentskills.io agent. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
+| [eunuch-mode](https://github.com/conorbronsdon/eunuch-mode) | A fictional palace-adviser persona for AI assistants: theatrical flattery and practical counsel. Explicit activation and exit; prompt guidance, not enforced behavior. | [@conorbronsdon](https://github.com/conorbronsdon) |
+
 ### Productivity & Workflow
 
 | Skill | What it does | Author |
