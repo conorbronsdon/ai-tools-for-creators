@@ -29,6 +29,8 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Audit & rewrite content to remove AI writing patterns — 74 pattern categories + a 112-entry replacement table. Rewrite / detect / edit-in-place modes, optional voice profiles (casual/professional/technical/warm/blunt), and a zero-dependency detector engine. Installs as a Claude Code / Cowork plugin or a standalone skill. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [demo-gif-skill](https://github.com/conorbronsdon/demo-gif-skill) | Add a reproducible demo GIF to any repo's README in one prompt. Picks the method (vhs for terminals, Playwright for web apps), writes a committed recording script so the GIF regenerates instead of going stale, optimizes under 8 MB, and embeds it with real alt text. Works in Claude Code and any agentskills.io agent. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [grokkable-output](https://github.com/conorbronsdon/grokkable-output) | Make agent replies parseable in one pass — the first sentence answers the question, detail layers underneath so you can stop reading anywhere. Bans arrow-chain causality, fake structure, and numbers that don't trace to evidence. Ships real unedited before/after outputs. Works in Claude Code and any agentskills.io agent. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [write-like-me](https://github.com/conorbronsdon/write-like-me) | Build a voice profile from your own writing, then draft and check text against it so your agent sounds like you. Every rule in the profile must cite a measurement of your samples, a verbatim quote, your own edits, or your answer to a question. Companion to avoid-ai-writing. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [fact-check](https://github.com/conorbronsdon/fact-check) | Fact-check a draft before it ships: extracts every checkable claim (names, numbers, dates, quotes), tries to refute each against a primary source, and returns a verdict and source per claim. Flags, never edits. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [eunuch-mode](https://github.com/conorbronsdon/eunuch-mode) | A fictional palace-adviser persona for AI assistants: theatrical flattery and practical counsel. Explicit activation and exit; prompt guidance, not enforced behavior. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Productivity & Workflow
@@ -39,11 +41,11 @@ Drop-in instruction files for AI coding agents (Claude Code, Cursor, Windsurf, e
 | [reconcile](https://github.com/conorbronsdon/agent-workspace) | Tripwire check for multi-session drift — scans commits and state files for inconsistencies from parallel sessions. Part of agent-workspace. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [recover](https://github.com/conorbronsdon/agent-workspace) | Scan for orphaned worktrees and stale branches after crashes. Read-only by default, cleanup requires approval. Part of agent-workspace. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [agent-skill-builder](https://github.com/conorbronsdon/agent-skill-builder) | Build agent skills that don't rot. Generates skills from plain-language descriptions with the design decisions most generators skip (invocation control, arguments, context budget), validates them with a bundled checker, and pins its spec knowledge to a CI-watched snapshot. New/review/migrate modes. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [ssot-check](https://github.com/conorbronsdon/ssot-check) | Single-source-of-truth drift auditor, now tool-backed: deterministic stdlib CLI (45 tests) + skill wrapper + pre-commit hook + GitHub Action. Finds facts hand-copied across docs, builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [ssot-check](https://github.com/conorbronsdon/ssot-check) | Single-source-of-truth drift auditor, now tool-backed: deterministic stdlib CLI + skill wrapper + pre-commit hook + GitHub Action. Finds facts hand-copied across docs, builds a manifest of canonical locations, and flags every copy that drifted. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [repo-audit](https://github.com/conorbronsdon/repo-audit) | Audit a repo against its own code, or get it ready to open-source. For every claim that something is prevented, blocked, or guaranteed, it finds the mechanism and grades it Enforced, Advisory, or Guidance — a warning that prints but does not block is not enforcement. Reads source, tests, hooks and CI before the README; every finding cites file:line and what it could not verify. Six checklist packs, five README templates, optional modules. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [agent-memory-kit](https://github.com/conorbronsdon/agent-memory-kit) | The curation loop for agent memory — capture, recall, and a read-only curator that finds rot and contradictions before your agent is confidently wrong. Plain markdown and JSON, five slash commands, human-reviewed diffs. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [agent-skills](https://github.com/conorbronsdon/agent-skills) | Production-tested skills for Claude Code, Codex, Cursor, and OpenCode — session management, multi-session reconciliation, worktree recovery, PR review, and skill scaffolding. The consolidated successor to claude-code-skills. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [agent-context-os](https://github.com/conorbronsdon/agent-context-os) | Git-backed context and workflow for Claude Code, Codex, and Hermes. Keeps durable state in Markdown with reviewed session handoffs and lifecycle skills. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [agent-context-os](https://github.com/conorbronsdon/agent-context-os) | Git-backed context and workflow for Claude Code, Codex, Hermes Agent, OpenClaw, OpenCode, Cursor CLI, and Devin. Keeps durable state in Markdown with reviewed session handoffs and lifecycle skills. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ### Development & Code Review
 
@@ -73,12 +75,13 @@ MCP servers give AI agents access to real tools and data.
 | Server | What it does | Author |
 |--------|-------------|--------|
 | [Transistor MCP](https://mcp.transistor.fm) | Transistor.fm's official MCP server: draft and publish episodes, bulk-edit past episodes, and see which topics get traction. | [Transistor.fm](https://transistor.fm) (official) |
-| [substack-mcp](https://github.com/conorbronsdon/substack-mcp) | Read posts, manage drafts on Substack. No publish or delete by design — safe for agent workflows. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [substack-mcp](https://github.com/conorbronsdon/substack-mcp) | Substack drafts, archive search, Notes, analytics, and consented subscriber management across publications. Long-form posts are draft-only (it cannot publish or delete them); Notes publish immediately, so treat the Note tools as public actions. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [avoid-ai-writing-mcp](https://github.com/conorbronsdon/avoid-ai-writing-mcp) | Local, deterministic MCP server for the avoid-ai-writing detector: `score_text` and `audit_text` return a score and the flagged patterns with suggested alternatives. Read-only, no network calls, no language model. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [podcastindex-mcp](https://github.com/conorbronsdon/podcastindex-mcp) | Podcast Index API — search by person/topic, trending podcasts, feed health checks, cross-platform episode discovery. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [apple-podcasts-mcp](https://github.com/conorbronsdon/apple-podcasts-mcp) | Owner-side Apple Podcasts analytics over the Podcasts Connect Reporter protocol — plays, unique and engaged listeners, followers, per-episode listening. Not the public iTunes catalog. Read-only. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [apple-podcasts-mcp](https://github.com/conorbronsdon/apple-podcasts-mcp) | Owner-side Apple Podcasts analytics over the Podcasts Connect Reporter protocol — plays, unique and engaged listeners, followers, per-episode listening. Not the public iTunes catalog. Read-only. Implemented from Apple's Reporter docs and tested against fixtures; not yet confirmed against a live Apple account. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [chain-of-thought-podcast-mcp](https://github.com/conorbronsdon/chain-of-thought-podcast-mcp) | Search and cite the Chain of Thought podcast archive: full-text search over every episode's transcript, episode lookup, and bounded transcript excerpts, with each result linked to its episode page on chainofthought.show. Remote and read-only, no login or API key. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [op3-mcp](https://github.com/conorbronsdon/op3-mcp) | OP3 (Open Podcast Prefix Project) analytics — downloads over time, listener geography, app share, per-episode breakdowns. Read-only by design. | [@conorbronsdon](https://github.com/conorbronsdon) |
-| [postlint-mcp](https://github.com/conorbronsdon/postlint-mcp) | Check a draft against a platform's real character limits before you post — X bills every URL at 23 via t.co and weights non-Latin 2x, Bluesky counts 300 graphemes, Mastodon counts grapheme clusters. Every limit carries a primary source. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [postlint-mcp](https://github.com/conorbronsdon/postlint-mcp) | Check a draft against a platform's real character limits before you post — X bills every URL at 23 via t.co and counts CJK, Hangul, and emoji double, Bluesky counts 300 graphemes, Mastodon counts grapheme clusters. Every limit carries a primary source. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [gsc-mcp](https://github.com/conorbronsdon/gsc-mcp) | Google Search Console — search analytics, sitemap submission, URL inspection. Read tools work on a read-only scope; writes ask for the full one. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [yt-analytics-mcp](https://github.com/conorbronsdon/yt-analytics-mcp) | Owner-side YouTube Analytics — watch time, traffic sources, audience retention, geography, and playlist metrics, plus an episode-race tool that re-indexes videos to days-since-their-own-publish so a new episode compares against the last few at the same age. The owner-only half the Data API can't reach: no API key gets you retention or watch time. Nine tools, all reads, `channel==MINE` hardcoded. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
@@ -130,7 +133,6 @@ If you're building with agents, you eventually need to measure them. Tools for t
 
 | Project | What it does | Author |
 |---------|-------------|--------|
-| [cot-bench](https://github.com/conorbronsdon/cot-bench) | Open agent evaluation leaderboard. Three judges score every scenario (two open-weight, one frontier reference) across CLEAR-aligned metrics: efficacy, cost, reliability, latency. Rubrics are code, and every raw judge score is published so you can audit the results. | [@conorbronsdon](https://github.com/conorbronsdon) |
 | [podcast-benchmark](https://github.com/conorbronsdon/podcast-benchmark) | Benchmark any podcast against its peers using only public data — catalog depth, cadence, transcript availability, feed hygiene. No download estimates, every number sourced and timestamped. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## Web Apps
@@ -139,7 +141,7 @@ Standalone tools that run in the browser. No agent, no install.
 
 | App | What it does | Author |
 |-----|-------------|--------|
-| [track-finder](https://github.com/conorbronsdon/track-finder) | Paste a tracklist or a YouTube playlist URL and get search links for every track on SoundCloud, Spotify, YouTube, Apple Music, or Beatport. Progress saves in your browser. Built for DJs and playlist builders. | [@conorbronsdon](https://github.com/conorbronsdon) |
+| [track-finder](https://github.com/conorbronsdon/track-finder) | Paste a tracklist or a YouTube playlist URL and get search links for every track on SoundCloud, Spotify, YouTube, Apple Music, Beatport, Tidal, Bandcamp, Deezer, or Mixcloud. Progress saves in your browser. Built for DJs and playlist builders. | [@conorbronsdon](https://github.com/conorbronsdon) |
 
 ## How to Use These
 
@@ -147,9 +149,9 @@ Standalone tools that run in the browser. No agent, no install.
 
 Most skills follow the [agentskills.io](https://agentskills.io) standard and work across tools. For Claude Code specifically:
 
-1. Download the skill file (usually `SKILL.md` or similar)
-2. Place it in your project directory or reference it in your CLAUDE.md
-3. Invoke it — most skills include slash command instructions
+1. Copy the skill's directory (the folder holding `SKILL.md` plus any `references/` or `scripts/`) to `.claude/skills/<name>/` in your project, or `~/.claude/skills/<name>/` to use it everywhere
+2. Claude Code loads it automatically when a request matches its description, and you can run it directly as `/<name>`
+3. Check each skill's README; some need their whole repository, and some also install as plugins
 
 ### Skills (Other Agents)
 
